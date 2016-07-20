@@ -11,6 +11,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [
     "iquery",
+    "bosonnlp",
     # TODO: put package requirements here
 ]
 
@@ -50,5 +51,11 @@ setup(
         'Programming Language :: Python :: 3.5',
     ],
     test_suite='tests',
-    tests_require=test_requirements
+    tests_require=test_requirements,
+
+    entry_points={
+         'console_scripts': [
+                         'ibot = ibot.ibot:main'
+            ]
+        }
 )
