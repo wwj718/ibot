@@ -21,7 +21,7 @@ test_requirements = [
 
 setup(
     name='ibot',
-    version='0.1.0',
+    version='0.1.1',
     description="a bot",
     long_description=readme + '\n\n' + history,
     author="wenjie wu",
