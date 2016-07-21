@@ -1,2 +1,2 @@
 # todo
-*  配置文件，在主目录下，用yml吧
+采用snownlp/TextBlob来解析自然语言
