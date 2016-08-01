@@ -29,4 +29,9 @@ ibot 查一下上海去北京的车票，下周六
 
 ![](http://oav6fgfj1.bkt.clouddn.com/ibot13761852.png)
 
+# 进展中
+*  增加语音解析功能（基本完成）
 
+# todo
+*  把自然语言解析器抽象成通用工具
+*  采用snownlp/TextBlob来解析自然语言
