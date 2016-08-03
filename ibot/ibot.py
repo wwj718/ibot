@@ -10,6 +10,9 @@ import collections
 import subprocess
 import datetime
 
+import BaiduYuyin as pby
+
+
 home = expanduser("~")
 with open(os.path.join(home,".ibot.yml")) as f:
     config = yaml.load(f)
@@ -108,7 +111,14 @@ def pattern_train_ticket(query):
 
 
 def main():
-    query = " ".join(sys.argv[1:])
+    if len(sys.argv)==1:
+        r = pby.Recognizer()
+        with pby.Microphone() as source:
+            print(u"Say something!")
+            audio = r.listen(source)
+            query = r.recognize(audio)
+    else:
+        query = " ".join(sys.argv[1:])
     printf(query)
     printf("*"*8)
     pattern_train_ticket(query)
