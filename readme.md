@@ -30,7 +30,8 @@ ibot 查一下上海去北京的车票，下周六
 ![](http://oav6fgfj1.bkt.clouddn.com/ibot13761852.png)
 
 # 进展中
-*  增加语音解析功能（基本完成）
+*  增加语音解析功能（基本完成）:可以通过检出feature/voice分支
+    *  目前有python2/3的兼容问题
 
 # todo
 *  把自然语言解析器抽象成通用工具
